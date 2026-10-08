@@ -19,7 +19,6 @@ The analysis is designed as a portfolio-quality Data Analyst project and combine
 
 > **Important:** The dataset is synthetic. Business recommendations are therefore analytical demonstrations rather than claims about a real support organization.
 
----
 
 ## 2. Business Problem
 
@@ -35,7 +34,6 @@ An IT support organization wants to understand:
 8. Are negative sentiment and CSAT concentrated in specific issue categories?
 9. Where should management focus process improvement and support capacity?
 
----
 
 ## 3. Dataset
 
@@ -66,7 +64,6 @@ An IT support organization wants to understand:
 | `platform` | Platform involved |
 | `region` | Customer region |
 
----
 
 # 4. Executive KPI Summary
 
@@ -95,7 +92,7 @@ For this analysis, backlog is defined as:
 
 These statuses collectively represent **39.89% of all tickets**.
 
----
+
 
 # 5. Exploratory Data Analysis — EDA
 
@@ -139,7 +136,7 @@ Add these fields to a production support dataset:
 
 These fields would enable true SLA, response-time and agent productivity analysis.
 
----
+
 
 # 6. Major Business Findings
 
@@ -166,7 +163,6 @@ The organization has a significant amount of unresolved work. Management should 
 - automation for repetitive issues
 - root-cause elimination
 
----
 
 ## Finding 2 — Customer satisfaction is weak
 
@@ -176,7 +172,6 @@ Approximately **42.45% of tickets have negative or very negative sentiment**.
 
 This indicates that ticket closure alone is not sufficient. The organization should optimize for **resolution quality and customer experience**, not simply ticket throughput.
 
----
 
 ## Finding 3 — Account access, performance and security are the most problematic issue types
 
@@ -205,7 +200,6 @@ Prioritize:
 4. Billing-error prevention
 5. Better self-service documentation for common issues
 
----
 
 ## Finding 4 — Priority handling appears directionally sensible
 
@@ -222,7 +216,6 @@ This suggests that higher-priority tickets receive faster attention.
 
 However, **2,044 urgent tickets remain in the backlog**, so urgent-ticket queue management deserves monitoring.
 
----
 
 ## Finding 5 — Product areas have relatively similar ticket volumes
 
@@ -243,7 +236,6 @@ Do not allocate resources only according to ticket volume. Combine:
 
 A lower-volume product can still be strategically important if it generates severe customer dissatisfaction.
 
----
 
 ## Finding 6 — Channel performance is relatively stable
 
@@ -263,7 +255,6 @@ Rather than immediately shifting volume between channels, investigate:
 - response time
 - customer segment by channel
 
----
 
 ## Finding 7 — SLA plans do not show a large performance separation
 
@@ -286,7 +277,6 @@ Segment SLA analysis by:
 
 Do not judge SLA performance using only overall averages.
 
----
 
 # 7. High-Risk Queue
 
@@ -309,7 +299,6 @@ This should be treated as a management-priority queue.
 5. Track daily reduction in high-risk backlog.
 6. Perform root-cause analysis for recurring issue types.
 
----
 
 # 8. Customer Concentration
 
@@ -319,7 +308,6 @@ The top 10 customers generated **223 tickets**, representing approximately **0.2
 
 This suggests that ticket demand is not heavily concentrated among a small number of customers.
 
----
 
 # 9. Trend Analysis
 
@@ -329,7 +317,6 @@ The highest monthly ticket volume occurs around **July 2023**, with approximatel
 
 The dataset therefore does not show an extreme long-term workload explosion; the major business challenge is more closely related to **resolution quality, backlog and customer satisfaction**.
 
----
 
 # 10. SQL Analysis
 
@@ -359,7 +346,6 @@ The queries are written using common SQL patterns such as:
 - ranking / ordering
 - date extraction
 
----
 
 # 11. Python Analysis
 
@@ -402,7 +388,7 @@ The queries are written using common SQL patterns such as:
 - platform
 - region
 
-# 13. Business Recommendations
+# 12. Business Recommendations
 
 ## Priority 1 — Reduce backlog
 
@@ -466,7 +452,7 @@ A stronger scorecard should include:
 
 > Ticket volume + backlog + resolution time + CSAT + sentiment + reopen rate + SLA compliance
 
-# 18. Final Conclusion
+# 13. Final Conclusion
 
 The analysis shows that the primary challenge is **not ticket demand alone; it is the combination of backlog, low customer satisfaction and high negative sentiment in specific issue categories**.
 
