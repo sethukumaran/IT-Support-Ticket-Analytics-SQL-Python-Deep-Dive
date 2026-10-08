@@ -1,7 +1,4 @@
 -- IT Support Ticket Analysis: Business SQL
--- Dialect: SQLite 3.x
--- Load: CREATE TABLE tickets AS SELECT * FROM read_csv_auto(...) for DuckDB,
--- or import synthetic_it_support_tickets.csv into a table named tickets.
 
 -- 1. Overall KPI
 SELECT
